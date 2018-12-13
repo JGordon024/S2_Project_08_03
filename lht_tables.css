@@ -39,7 +39,12 @@
    }
    tr:nth-of-type(odd){
       background:rgb(255, 235, 178);
-      border:2px solid gray
+      border:2px solid gray;
+   }
+   td[data-type="date"]{
+position: absolute;
+width: 40%;
+padding: 5px
    }
 }
 
