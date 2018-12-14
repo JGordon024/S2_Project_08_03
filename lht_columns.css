@@ -12,7 +12,15 @@
    Filename:   lht_columns.css
 
 */
-
-
+/* Separates the article into three columns with a line separating each */
+article{
+   column-width: 260px;
+   column-gap: 20px;
+   column-rule: 1px solid rgb(154, 64, 31);
+}
+/* The header goes above all of the columns */
+article h1{
+   column-span: all;
+}
 
 /* Column Styles */

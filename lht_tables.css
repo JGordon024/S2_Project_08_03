@@ -70,11 +70,44 @@
 */
 
 @media only screen and (min-width: 641px) {
+   /* Places an image in the bottom right and resizes it. Gives the table its design and structure */
     table {
         background: url(lht_photo1.png) no-repeat bottom right;
         background-size: 40% 100%;
         border: 6px double rgb(154, 64, 3);
         border-collapse: collapse;
         margin: 20px auto;
+      table-layout: fixed;
+      width: 85%
     }
+    /* Sets up header and data cells, gives them font, border, padding, allows the word to break as the screen decreases in size */
+    td, th{
+       border: 1px solid gray;
+       font-size: 0.85em;
+       vertical-align: top;
+       padding: 5px;
+       word-wrap: break-word;
+       width:14.28%;
+    }
+    /* Data cells are displayed with a gray transparent background with blue text */
+   td{
+      background: rgba(171, 171, 171, 0.6);
+      color:rgb(11, 12, 145);
+   }
+   /* Any data cells that has Feb within the date attribute is displayed with a very light brown transparent background and has a shadow */
+   td[data-date*="Feb"]{
+      background:rgba(232, 214, 148, 0.6);
+      box-shadow: gray inset 0px 0px 20px
+   }
+   /* Gives design to the caption */
+   caption{
+      text-align: center;
+      font-size: 1.2em;
+      letter-spacing: 3px;
+   }
+   /* Gives table headers within the table header white text and a brownish background */
+   thead th{
+      background: rgb(154, 64, 3);
+      color: white;
+   }
 }

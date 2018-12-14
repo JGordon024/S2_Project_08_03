@@ -75,9 +75,10 @@
     <table id="calander">
         <caption>Febuary 2018 Calander</caption>
         <colgroup>
-            <col class="weekdays" slan="5">
+            <col class="weekdays" span="5">
             <col class="weekends" span="2">
         </colgroup>
+        <!-- The first part of the table, gives the table header seven header cells with the week days inside -->
         <thead>
             <tr>
                 <th>Sun</th>
@@ -89,6 +90,9 @@
                 <th>Sat</th>
             </tr>
         </thead>
+        <!-- Gives all the content of the table body. It five rows, and within each row is seven data cells. Each data cell contains
+        a data attribute of data, and each one contains the date. Each Cell is accompanied by the month and day in a header and the event,
+    time, and cost all in a discription list -->
         <tbody>
             <tr>
                 <td data-date="Sun, Jan 28, 2018">
